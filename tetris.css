@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', 'Segoe UI', system-ui, sans-serif;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-board {
+    border: 2px solid #333;
+    background-color: #000;
+}
+
+#score {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 48px;
+    display: none;
+}
+
+#guide {
+    color: white;
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+#status {
+    color: #f0f000;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    min-height: 40px;
+    font-family: 'Arial', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+}
+
+.key {
+    background: #444;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}

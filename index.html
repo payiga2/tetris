@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tetris Clone</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Tetris with Guide</title>
+    <link rel="stylesheet" href="tetris.css">
 </head>
 <body>
-  <h1>Tetris Clone</h1>
-  <div class="game-container">
-    <canvas id="tetris" width="300" height="600"></canvas>
-    <div class="info">
-      <p>Score: <span id="score">0</span></p>
-      <p>Level: <span id="level">1</span></p>
+    <div id="status">Status: Noob [Baby]</div>
+    <div id="container">
+        <div id="game-container">
+            <div id="score">Score: 0</div>
+            <canvas id="game-board" width="300" height="600"></canvas>
+            <div id="game-over">GAME OVER</div>
+        </div>
+
+        <div id="guide">
+            <h2>How to Play [Controller]</h2>
+            <ul>
+                <li><span class="key">←</span> Move left</li>
+                <li><span class="key">→</span> Move right</li>
+                <li><span class="key">↓</span> Speed down</li>
+                <li><span class="key">↑</span> Rotate [🔄]</li>
+                <li><span class="key">Space</span> Hard drop</li>
+            </ul>
+            <p>Score big to level up your status! [Rocket]</p>
+            <p>4-line clears = MAX POINTS! [Boom]</p>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="tetris.js"></script>
 </body>
 </html>
